@@ -1,0 +1,188 @@
+﻿配合產線生產
+牙齒疼痛
+申請錯誤
+加班預報不進系統
+調休申請，調假休息
+======================================================================================================================
+X2003899
+foxconn12
+
+F1323348
+host_name: 10.36.6.68
+Port_number: 3128
+no_proxy_for:10.*.*.*;172.*.*.*;*.foxconn.com;*.efoxconn.com;*.*.office.net;*.adobe.com
+10.167.2.119  10.167.197.67  10.167.6.61
+
+
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+阿里：http://mirrors.aliyun.com/pypi/simple/
+
+set http_proxy=http://X2003899:foxconn12@10.36.6.68:3128
+set https_proxy=http://X2003899:foxconn12@10.36.6.68:3128（https://X2003899:foxconn12@10.36.6.68:3128）
+
+python -m pip install pip==20.2.4  --no-cache-dir
+python -m pip install --upgrade pip
+
+set http_proxy=http://F1339826:j7NPj7Jq@10.191.131.15:3128
+set https_proxy=http://F1339826:j7NPj7Jq@10.191.131.15:3128
+
+
+pyinstaller -F demo_02.py
+python -m pip install --target=E:\untitled1\von\Lib\site-packages apsd
+pip install dateutil -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+pip install dateutil -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+pip install C:\Users\X2003899\Downloads\matplotlib-3.2.2-cp37-cp37m-win_amd64.whl
+sudo pip install /home/X2003899/wnbu/plugins/django_bootstrap4-22.3-py3-none-any.whl
+
+sudo python uninstall uWSGI
+tar -zxvf uwsgi-2.0.17.1.tar.gz
+sudo rm -rf ~/.cache/pip
+sudo python setup.py install
+
+pip install setuptools wheel
+
+
+
+
+Best Regards,
+CNS WNBU TE
+Jerry luo（羅紫杰）
+Mobile: 158-1993-2009
+
+Best Regards,
+Jerry luo
+
+
+swcjha645gl54@163.com
+pH8jww1er5
+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
+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
+
+志願者-李晨 73523
+======================================================================================================================
+poe 	1236上电（橙白，橙，绿白，绿）
+
+ALT-A   oneEvent 都不上电
+	twoEvent 1236上电
+
+ALT-B	oneEvent 4578上电（蓝，蓝白，棕白，棕）
+	twoEvent 4578上电
+======================================================================================================================
+https://10.167.219.21/ 	（0号服务器） DEPLOY—>DEPLOY:BUILD—>开始—>选择机种—>输入账号密码—>创建TAG
+
+mobaxterm 连接更改的服务器 —> genius prod update2—>输入账号密码—>选择要更新的程序（vc_ss_rma）—>选择版本—>cd /opt/genius/gen/config/ 查看是否link—>若没有则genius link /opt/prod/vc_ss_rma/config/download_ios_config.py—>genius start—>输入账号密码—>
+
+切换debug程序
+cd /opt/te/ vc_ss_rma —> git branch genius clone http://10.132.45.143/wnbu/vc_ss_rma.git —>
+（更换）genius checkout /opt/te/vc_ss_rma jerry_vc_ss_rma —> cd..—> cd ../. —>git branch—> genius te update	
+
+ssh –X  genius@10.1.1.1
+google-chrome&
+
+======================================================================================================================
+创建虚拟环境 python -m venv ll_env
+激活虚拟环境 ll_env\Scripts\activate
+停止虚拟环境 deactivate
+运行项目 python manage.py runserver
+创建项目django-admin startproject wnbu
+创建应用程序 python manage.py startapp wnbu_server
+修改数据库 python manage.py makemigrations wnbu_server
+迁移数据库 python manage.py migrate
+删除数据库 python manage.py migrate wnbu_server zero
+删除应用程序的迁移文件 rmdir /s wnbu_server\migrations
+
+https://pypi.tuna.tsinghua.edu.cn/simple/uWSGI/
+
+
+pipreqs .
+pip download -r requirements.txt
+
+pip freeze >deploy_requirements.txt  导出依赖包
+
+pip download --no-deps on -d packages/ -r deploy_requirements.txt： 不下载依赖包
+pip download on -d packages/ --no-binary=:all: 下载依赖包
+pip download -d packages/ setuptools==65.6.3 单下载一个包 packaging pyparsing six
+
+
+linux-->pip freeze | xargs pip uninstall -y：删除第三方库
+windows--->1.  pip freeze > packages.txt
+	   2.  FOR /F "delims==" %i IN (packages.txt) DO pip uninstall -y "%i"
+ 
+pip install --no-index --find-links=./packages -r deploy_requirements.txt  从本地安装
+
+pip install --no-index --find-links=. pip-21.2.4-py3-none-any.whl 单个本地安装
+
+
+
+
+
+python3 -m venv virtual/environment
+source virtual/environment/bin/activate
+
+sudo pip uninstall uWSGI
+sudo find / -type f -name "*.pyc" -delete
+sudo rm -rf ~/.cache/pip
+sudo pip install --no-cache-dir /home/X2003899/wnbu/plugins/uwsgi-2.0.17.1.tar.gz
+
+uwsgi --http :8006 --wsgi-file test.py
+
+
+收集静态文件：sudo python manage.py collectstatic
+开始运行：uwsgi --ini uwsgi.ini &
+uwsgi --stop /home/X2003899/wnbu/learning_log/file.pid
+查看uwsgi相关进程：ps -ef | grep uwsgi
+查看uwsgi.pid内容: cat uwsgi.pid
+找到uwsgi的进程ID（PID）： ps aux | grep uwsgi
+杀死进程：kill -9 PID
+
+pip install --no-cache-dir /home/X2003899/wnbu/plugins/uwsgi-2.0.17.1.tar.gz
+
+
+
+yum install -y pcre pcre-devel pcre-static
+yum list installed pcre
+rpm -q pcre
+rpm -q pcre-devel
+rpm -q pcre-static
+https://mirrors.aliyun.com/centos/7/os/x86_64/Packages/pcre-devel-8.32-17.el7.x86_64.rpm
+https://mirrors.aliyun.com/centos/7/os/x86_64/Packages/pcre-static-8.32-17.el7.x86_64.rpm
+sudo yum install -y ./pcre-devel-*.rpm ./pcre-static-*.rpm
+
+
+更改权限：chmod 755 /home/X2003899/wnbu/learning_log/
+
+sudo firewall-cmd --zone=public --add-port=8888/tcp --permanent # 开放8006端口
+sudo firewall-cmd --zone=public --remove-port=8006/tcp --permanent #关闭8006端口
+sudo firewall-cmd --reload # 配置立即生效
+sudo firewall-cmd --zone=public --list-ports #查看防火墙所有开放的端口
+sudo firewall-cmd --state  #查看防火墙状态
+
+
+=COUNTIF(C:C,C1)
+
+开启VNC，然后要输入局域网ip  ：   vinagre -n
+
+lsof -i:端口号 ：可通过端口号来查找进程ID -->sudo lsof -i:5050 
+kill -9 pid #关掉进程
+netstat -tunlp  #查看所有端口进程状态
+sudo fuser -k 8888/tcp #关闭端口监听
+
+
+
+Pulizzi Z-line Power Controller 电源
+
+genius log ：10.125.131.144:8020
+
+
+
+
+轉班前一周在系統里申請開通進出兩個機房的權限(網址：https://lhweb.cnsbg.efoxconn.com/)
+
+
+
+
+git clone
+git status
+git add .  
+git commit -m "7-24-init"
+git push --set-upstream origin main
